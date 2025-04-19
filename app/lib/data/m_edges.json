@@ -1,0 +1,282 @@
+[
+  {
+    "id": "e2-3-2-3-2",
+    "source": "2-3",
+    "target": "2-3-2",
+    "sourceHandle": "right-source",
+    "targetHandle": "left-target",
+    "type": "step"
+  },
+  {
+    "id": "e2-3-2-3-1",
+    "source": "2-3",
+    "target": "2-3-1",
+    "sourceHandle": "bottom-source",
+    "targetHandle": "left-target",
+    "type": "step"
+  },
+  {
+    "id": "e2-9-2-9-1",
+    "source": "2-9",
+    "target": "2-9-1",
+    "sourceHandle": "bottom-source",
+    "targetHandle": "left-target",
+    "type": "step"
+  },
+  {
+    "id": "e2-9-2-9-2",
+    "source": "2-9",
+    "target": "2-9-2",
+    "sourceHandle": "right-source",
+    "targetHandle": "left-target",
+    "type": "step"
+  },
+  {
+    "id": "e2-4-2-4-2",
+    "source": "2-4",
+    "target": "2-4-2",
+    "sourceHandle": "right-source",
+    "targetHandle": "left-target",
+    "type": "step"
+  },
+  {
+    "id": "e2-4-2-4-1",
+    "source": "2-4",
+    "target": "2-4-1",
+    "sourceHandle": "right-source",
+    "targetHandle": "left-target",
+    "type": "step"
+  },
+  {
+    "id": "e2-4-2-4-3",
+    "source": "2-4",
+    "target": "2-4-3",
+    "sourceHandle": "right-source",
+    "targetHandle": "left-target",
+    "type": "step"
+  },
+  {
+    "id": "e2-4-3-2-4-3-1",
+    "source": "2-4-3",
+    "target": "2-4-3-1",
+    "sourceHandle": "right-source",
+    "targetHandle": "left-target",
+    "type": "step"
+  },
+  {
+    "id": "e2-6-2-6-1",
+    "source": "2-6",
+    "target": "2-6-1",
+    "sourceHandle": "bottom-source",
+    "targetHandle": "left-target",
+    "type": "step"
+  },
+  {
+    "id": "e2-6-2-6-2",
+    "source": "2-6",
+    "target": "2-6-2",
+    "sourceHandle": "right-source",
+    "targetHandle": "left-target",
+    "type": "step"
+  },
+  {
+    "id": "e2-6-2-7",
+    "source": "2-6",
+    "target": "2-7",
+    "sourceHandle": "left-source",
+    "targetHandle": "right-target",
+    "type": "step"
+  },
+  {
+    "id": "e2-1-2-1-1",
+    "source": "2-1",
+    "target": "2-1-1",
+    "sourceHandle": "bottom-source",
+    "targetHandle": "top-target",
+    "type": "step"
+  },
+  {
+    "id": "e2-1-1-2-1-1-2",
+    "source": "2-1-1",
+    "target": "2-1-1-2",
+    "sourceHandle": "right-source",
+    "targetHandle": "top-target",
+    "type": "step"
+  },
+  {
+    "id": "e2-1-1-2-1-1-1",
+    "source": "2-1-1",
+    "target": "2-1-1-1",
+    "sourceHandle": "bottom-source",
+    "targetHandle": "top-target",
+    "type": "step"
+  },
+  {
+    "id": "e2-1-1-2-1-1-3",
+    "source": "2-1-1",
+    "target": "2-1-1-3",
+    "sourceHandle": "left-source",
+    "targetHandle": "top-target",
+    "type": "step"
+  },
+  {
+    "id": "e2-7-2-7-1",
+    "source": "2-7",
+    "target": "2-7-1",
+    "sourceHandle": "bottom-source",
+    "targetHandle": "right-target",
+    "type": "step"
+  },
+  {
+    "id": "e2-7-2-7-2",
+    "source": "2-7",
+    "target": "2-7-2",
+    "sourceHandle": "left-source",
+    "targetHandle": "right-target",
+    "type": "step"
+  },
+  {
+    "id": "e2-2-1-2-2-1-1",
+    "source": "2-2-1",
+    "target": "2-2-1-1",
+    "sourceHandle": "left-source",
+    "targetHandle": "right-target",
+    "type": "step"
+  },
+  {
+    "id": "e2-2-1-2-2",
+    "source": "2-2-1",
+    "target": "2-2",
+    "sourceHandle": "left-source",
+    "targetHandle": "bottom-target",
+    "type": "step"
+  },
+  {
+    "id": "e2-2-2-2-2",
+    "source": "2-2",
+    "target": "2-2-2",
+    "sourceHandle": "left-source",
+    "targetHandle": "right-target",
+    "type": "step"
+  },
+  {
+    "id": "e2-8-2-8-2",
+    "source": "2-8",
+    "target": "2-8-2",
+    "sourceHandle": "left-source",
+    "targetHandle": "right-target",
+    "type": "step"
+  },
+  {
+    "id": "e2-8-2-2-8-1",
+    "source": "2-8-2",
+    "target": "2-8-1",
+    "sourceHandle": "left-source",
+    "targetHandle": "right-target",
+    "type": "step"
+  },
+  {
+    "id": "e2-5-2-5-1",
+    "source": "2-5",
+    "target": "2-5-1",
+    "sourceHandle": "left-source",
+    "targetHandle": "right-target",
+    "type": "step"
+  },
+  {
+    "id": "e2-5-2-5-2",
+    "source": "2-5",
+    "target": "2-5-2",
+    "sourceHandle": "left-source",
+    "targetHandle": "right-target",
+    "type": "step"
+  },
+  {
+    "id": "e2-8-2-5-2",
+    "source": "2-8",
+    "target": "2-5-2",
+    "sourceHandle": "left-source",
+    "targetHandle": "right-target",
+    "type": "step"
+  },
+  {
+    "id": "e2-5-1-2-5-3",
+    "source": "2-5-1",
+    "target": "2-5-3",
+    "sourceHandle": "left-source",
+    "targetHandle": "right-target",
+    "type": "step"
+  },
+  {
+    "id": "e2-10-2-10-1",
+    "source": "2-10",
+    "target": "2-10-1",
+    "sourceHandle": "top-source",
+    "targetHandle": "left-target",
+    "type": "step"
+  },
+  {
+    "id": "e2-10-2-10-2",
+    "source": "2-10",
+    "target": "2-10-2",
+    "sourceHandle": "right-source",
+    "targetHandle": "left-target",
+    "type": "step"
+  },
+  {
+    "id": "e2-10-1-2-3-1",
+    "source": "2-10-1",
+    "target": "2-3-1",
+    "sourceHandle": "bottom-source",
+    "targetHandle": "top-target",
+    "type": "step"
+  },
+  {
+    "id": "e2-12-2-12-1",
+    "source": "2-12",
+    "target": "2-12-1",
+    "sourceHandle": "left-source",
+    "targetHandle": "right-target",
+    "type": "step"
+  },
+  {
+    "id": "e2-12-2-12-2",
+    "source": "2-12",
+    "target": "2-12-2",
+    "sourceHandle": "bottom-source",
+    "targetHandle": "right-target",
+    "type": "step"
+  },
+  {
+    "id": "e2-11-2-11-1",
+    "source": "2-11",
+    "target": "2-11-1",
+    "sourceHandle": "right-source",
+    "targetHandle": "left-target",
+    "type": "step"
+  },
+  {
+    "id": "e2-11-2-11-2",
+    "source": "2-11",
+    "target": "2-11-2",
+    "sourceHandle": "right-source",
+    "targetHandle": "top-target",
+    "type": "step"
+  },
+  {
+    "id": "e2-11-2-6",
+    "source": "2-11",
+    "target": "2-6",
+    "sourceHandle": "bottom-source",
+    "targetHandle": "right-target",
+    "type": "step"
+  },
+  {
+    "id": "e2-11-2-2-8",
+    "source": "2-11-2",
+    "target": "2-8",
+    "sourceHandle": "bottom-source",
+    "targetHandle": "bottom-target",
+    "type": "step"
+  }
+]

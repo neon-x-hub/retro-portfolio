@@ -1,0 +1,10 @@
+.cursor {
+    display: inline-block;
+    width: 10px;
+    animation: blink 0.8s infinite;
+    animation-timing-function: steps(1);
+  }
+
+  @keyframes blink {
+    50% { opacity: 0; }
+  }
