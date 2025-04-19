@@ -1,36 +1,77 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# **🎮 Pixelated Retro Portfolio**
+**Welcome to My 8-Bit Universe!**
 
-## Getting Started
+![Pixel Me](https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExNjF6OTh0Z2YxcTVibXZqMmV1cHoxeHY4NG1xZmZrd2lxdXd1MDA5cyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/09Z52rkIsAgRuIKkO6/giphy.gif)
 
-First, run the development server:
+## **🚀 What's This?**
+A **nostalgic, pixel-art-infused portfolio** that makes you feel like you’ve time-traveled back to 1995—except with React, shaders, and a suspicious lack of dial-up sounds.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Playable sections, secret Easter eggs 🥚, and a **fully interactive skill tree** (because why should RPGs have all the fun?).
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## **🕹️ Features**
+✔ **CRT Filter** – Because *everything* looks cooler with scanlines.
+✔ **Retro Mini-Games** – Guess my age? Nah, guess my **favorite coffee**.
+✔ **Quest System** – Complete tasks like "View Projects" or "Donate to My Coffee Fund ☕. *I don't drink it btw*"
+✔ **Glitch Effects** – For when I *pretend* my bugs are intentional.
+✔ **Secret Konami Code** – If you can find it send me a screenshot, DON'T CHEAT!!!! (Try it. I dare you.)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## **👾 How to Run**
+1. **Clone this repo** (like you’re stealing the Declaration of Independence):
+   ```bash
+   git clone https://github.com/your-username/pixel-portfolio.git
+   ```
+2. **Install dependencies** (a.k.a. digital duct tape):
+   ```bash
+   npm install
+   ```
+3. **Run the dev server** (cue *"It’s alive!"*):
+   ```bash
+   npm run dev
+   ```
+4. **Open [http://localhost:3000](http://localhost:3000)** and mash keys like it’s 1999.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## **🔧 Tech Stack**
+- **Next.js** – For *blazing-fast* loading (unlike your old dial-up).
+- **React Three Fiber** – 3D? In *my* pixel art? It’s more likely than you think.
+- **GLSL Shaders** – Making things glitchy since `#version 120`.
+- **CSS** – Because we *could* use `<blink>`, but we have *standards*.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## **🐛 Known Bugs**
+![Bug?](https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExNGlkZHdsOXF0MTBqMDQ3NXU2ZXU1ZWwyN2llMXJhZndrZXl0OXdjMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/JrkQ79ZpfZdn5iOwlr/giphy.gif)
+- **Mobile Users**: If the UI breaks, tilt your phone and blow into the cartridge.
+- **IE6 Users**: [Why?](https://www.youtube.com/watch?v=pUvwleVGVmA)
+- **Missing Sprites**: Blame the "artistic vision."
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## **🎯 TODO**
+- [ ] Add a **high-score table** for visitors who donate.
+- [ ] Replace "Skills" with **Street Fighter II-style combat stats**.
+- [ ] **Hidden "DOOM" level** (because why not?).
+
+---
+
+## **👀 Want to Contribute?**
+Found a bug? Want to add a **secret cheat code**?
+1. Fork it.
+2. Code it.
+3. **Profit???**
+
+---
+
+**Made with 🕹️, 🧇, and questionable life choices.**
+© 2025 [Memmou Abderrahmane] – *Not liable for nostalgia-induced productivity loss.*
+
+---
+
+![Game Over?](https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExOGJvbXNzOWkzeTc1NXUwNXJqZzBlOGZ4dzNseGFoMDdhamZuZ3RpOSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/S8fCuXghLZY2I/giphy.gif)
+
+*(Press START to continue... or just refresh the page.)*

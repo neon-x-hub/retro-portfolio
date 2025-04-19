@@ -46,7 +46,7 @@ export default function MobileOnly({ children }) {
 
     if (!isMobile) {
         return (
-            <div className="w-full h-[100dvh] flex flex-col items-center justify-center text-center font-bold">
+            <div className="w-full h-[100vh] flex flex-col items-center justify-center text-center font-bold">
 
                 <div className="p-2 py-4 w-[80%] max-w-4xl nes-container is-rounded">
                     <h1>Access Denied!</h1>
