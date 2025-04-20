@@ -16,17 +16,16 @@ export default function Donate() {
         {
             title: "PayPal",
             icon: "/icons/payment/paypal.png",
-            detail: "paypal.me/your-username",
-            link: "https://www.paypal.me/your-username",
+            detail: "abdomem7@gmail.com",
         },
         {
             title: "RedotPay",
-            icon: "/icons/payment/paypal.png",
-            detail: "redotpay.me/your-username",
+            icon: "/icons/payment/redotpay.png",
+            detail: "abdomem7@gmail.com",
         },
         {
             title: "Baridi Mob",
-            icon: "/icons/payment/paypal.png",
+            icon: "/icons/payment/baridi-mob.png",
             detail: "+213 5X XX XX XX",
         },
     ]
@@ -116,7 +115,7 @@ export default function Donate() {
                                 A Dialog that contains the dev support methods.
                             </Dialog.Description>
                         </VisuallyHidden.Root>
-                        <div className="space-y-4">
+                        <div className="space-y-4 w-full flex flex-col items-center justify-center">
                             {DONATION_OPTIONS.map((method, index) => (
                                 <DonateOption key={index} {...method} />
                             ))}
@@ -137,7 +136,7 @@ export default function Donate() {
 
 function DonateOption({ title, icon, detail, link }) {
     return (
-        <div className="flex flex-col items-center justify-between bg-gray-300 p-3 min-h-36"
+        <div className="flex flex-col items-center justify-between bg-gray-200 p-3 min-h-34 w-[95%]"
             style={{
                 clipPath: `polygon(
     0px calc(100% - 8px),

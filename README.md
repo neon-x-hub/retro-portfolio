@@ -11,11 +11,11 @@ Playable sections, secret Easter eggs 🥚, and a **fully interactive skill tree
 ---
 
 ## **🕹️ Features**
-✔ **CRT Filter** – Because *everything* looks cooler with scanlines.
-✔ **Retro Mini-Games** – Guess my age? Nah, guess my **favorite coffee**.
-✔ **Quest System** – Complete tasks like "View Projects" or "Donate to My Coffee Fund ☕. *I don't drink it btw*"
-✔ **Glitch Effects** – For when I *pretend* my bugs are intentional.
-✔ **Secret Konami Code** – If you can find it send me a screenshot, DON'T CHEAT!!!! (Try it. I dare you.)
+- ✔ **CRT Filter** – Because *everything* looks cooler with scanlines.
+- ✔ **Retro Mini-Games** – Guess my age? Nah, guess my **illusive life choices**.
+- ✔ **Quest System** – Complete tasks like "View Projects" or "Donate to My Coffee Fund ☕. *I don't drink it btw* "
+- ✔ **Glitch Effects** – For when I *pretend* my bugs are intentional.
+- ✔ **Secret Konami Code** – If you can find it send me a screenshot, DON'T CHEAT!!!! (Try it. I dare you.)
 
 ---
 
@@ -45,7 +45,6 @@ Playable sections, secret Easter eggs 🥚, and a **fully interactive skill tree
 ---
 
 ## **🐛 Known Bugs**
-![Bug?](https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExNGlkZHdsOXF0MTBqMDQ3NXU2ZXU1ZWwyN2llMXJhZndrZXl0OXdjMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/JrkQ79ZpfZdn5iOwlr/giphy.gif)
 - **Mobile Users**: If the UI breaks, tilt your phone and blow into the cartridge.
 - **IE6 Users**: [Why?](https://www.youtube.com/watch?v=pUvwleVGVmA)
 - **Missing Sprites**: Blame the "artistic vision."

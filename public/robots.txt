@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://mmmo.me
+
+# Sitemaps
+Sitemap: https://mmmo.me/sitemap.xml
