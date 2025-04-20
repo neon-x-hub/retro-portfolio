@@ -21,7 +21,7 @@ export const metadata = {
 
     // === SOCIAL CARDS === //
     openGraph: {
-      title: "Press START to Enter [YourName]'s Portfolio",
+      title: "Press START to Enter Memmou Abderrahmane's Portfolio",
       description: "8-bit inspired developer portfolio with CRT glow effects",
       url: 'https://mmmo.me', // REPLACE
       siteName: 'Memmou Abderrahmane', // REPLACE

@@ -26,7 +26,7 @@ export default function Donate() {
         {
             title: "Baridi Mob",
             icon: "/icons/payment/baridi-mob.png",
-            detail: "+213 5X XX XX XX",
+            detail: "00799999004000071462",
         },
     ]
 
