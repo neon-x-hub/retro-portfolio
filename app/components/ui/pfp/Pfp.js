@@ -1,6 +1,5 @@
-import Image from "next/image"
 import './Pfp.css'
-export default function Pfp({ pfpSize, pfpUrl }) {
+export default function Pfp({ pfpSize, pfpUrl, pfpPosterUrl }) {
 
     return (
         <div
@@ -11,14 +10,18 @@ export default function Pfp({ pfpSize, pfpUrl }) {
                 height: `${pfpSize}px`
             }}
         >
-            <Image
-                className="pixel-corners drop-shadow-2xl origin-center scale-90 "
+            <video
+                className="pixel-corners drop-shadow-2xl origin-center scale-90"
                 width={pfpSize}
                 height={pfpSize}
-                alt="Profile Picture - Sleeping Car"
+                autoPlay
+                loop
+                muted
+                playsInline
                 src={pfpUrl}
-                unoptimized
-            ></Image>
+                poster={pfpPosterUrl}
+            />
+
             <div className="w-full h-full absolute bg-white opacity-5 cursor-pointer">
             </div>
         </div>

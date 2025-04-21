@@ -2,14 +2,18 @@ import Image from "next/image";
 export default function ChapterDetails({ item }) {
     if (!item) return (
         <div className="h-[40%] flex items-center flex-col justify-center text-gray-800">
-            <Image
-                src={'/gifs/gameboy.gif'}
+            <video
+                src="/gifs/gameboy.webm"
                 width={250}
                 height={300}
                 className="h-auto"
-                alt="gameboy gif"
-                unoptimized
+                autoPlay
+                loop
+                muted
+                playsInline
+                poster="/gifs/gameboy-poster.jpg"
             />
+
             <span className=" -translate-y-7">
                 Select a Chapter to Start!
             </span>
@@ -41,7 +45,7 @@ export default function ChapterDetails({ item }) {
                         4px 8px,
                         0px 8px
                         )`,
-                        scrollbarColor: 'transparent'
+                scrollbarColor: 'transparent'
             }}>
             <h2 className="text-lg font-bold">{item.name}</h2>
             <p className="font-bold">{item.details}</p>

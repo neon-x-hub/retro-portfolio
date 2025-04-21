@@ -33,7 +33,7 @@ export default function ProfileInfo() {
                 </span>
                 <h2 className="text-md text-center font-bold"> - - Bio - - </h2>
                 <p className="text-center text-[12px]">
-                    Calligraphist and designer by day (undercover <a href={SCHOOL_LINK} target="_blank" rel="noopener noreferrer" className="underline !decoration-dashed">NHSAI</a> student), software engineer by night. I build systems from scratch, fix problems that shouldn’t have existed, and redesign old systems just to prove the client wrong. I also craft letters into art —nothing too complicated, just effortless beauty. <br /> Don’t waste my time, don’t waste yours.
+                    Calligraphist and designer by day (undercover <a href={SCHOOL_LINK} target="_blank" rel="noopener noreferrer" className="!text-black !underline !decoration-dashed">NHSAI</a> student), software engineer by night. I build systems from scratch, fix problems that shouldn’t have existed, and redesign old systems just to prove the client wrong. I also craft letters into art —nothing too complicated, just effortless beauty. <br /> Don’t waste my time, don’t waste yours.
                 </p>
 
             </div>

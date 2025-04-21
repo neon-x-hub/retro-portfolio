@@ -349,13 +349,17 @@ const DiamondNode = ({ id, data, selected }) => {
             />
 
             {/* Center label */}
-            <Image className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 mix-blend-darken"
-                src={'/gifs/space-invader-.gif'}
+            <video
+                src="/gifs/space-invader.webm"
                 height={diamondSize - 100}
                 width={diamondSize - 100}
-                alt='space invader gif'
-            >
-            </Image>
+                className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 mix-blend-darken"
+                autoPlay
+                loop
+                muted
+                playsInline
+            />
+
 
             {/* Top Handle */}
             <Handle

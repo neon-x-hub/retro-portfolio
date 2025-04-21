@@ -11,7 +11,21 @@ export default function CoverBg() {
             className="mb-8"
         >
             {/* This content will be masked */}
-            <div className="w-full h-[220px] bg-[url('/gifs/delete-computer.gif')] bg-cover"></div>
+            <div className="w-full h-[220px] overflow-hidden">
+                <video
+                    className="w-full object-cover object-center"
+                    src="/gifs/delete-computer.webm"
+                    height={220}
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    poster="/gifs/delete-computer-poster.jpg"
+                    preload="auto"
+                />
+            </div>
+
+
         </StochasticClipBox>
     )
 }

@@ -33,47 +33,61 @@ export default function Donate() {
     return (
         <div className=" h-[200px] w-full relative">
 
-            <div className="h-full bg-[url('/gifs/delete-computer.gif')] bg-cover brightness-50"
+            <div className="relative h-full brightness-50"
                 style={{
                     clipPath: `polygon(
-        0px calc(100% - 8px),
-        4px calc(100% - 8px),
-        4px calc(100% - 4px),
-        8px calc(100% - 4px),
-        8px 100%,
-        calc(100% - 8px) 100%,
-        calc(100% - 8px) calc(100% - 4px),
-        calc(100% - 4px) calc(100% - 4px),
-        calc(100% - 4px) calc(100% - 8px),
-        100% calc(100% - 8px),
-        100% 8px,
-        calc(100% - 4px) 8px,
-        calc(100% - 4px) 4px,
-        calc(100% - 8px) 4px,
-        calc(100% - 8px) 0px,
-        8px 0px,
-        8px 4px,
-        4px 4px,
-        4px 8px,
-        0px 8px
-      )
-    `
-                }}
+  0px calc(100% - 8px),
+  4px calc(100% - 8px),
+  4px calc(100% - 4px),
+  8px calc(100% - 4px),
+  8px 100%,
+  calc(100% - 8px) 100%,
+  calc(100% - 8px) calc(100% - 4px),
+  calc(100% - 4px) calc(100% - 4px),
+  calc(100% - 4px) calc(100% - 8px),
+  100% calc(100% - 8px),
+  100% 8px,
+  calc(100% - 4px) 8px,
+  calc(100% - 4px) 4px,
+  calc(100% - 8px) 4px,
+  calc(100% - 8px) 0px,
+  8px 0px,
+  8px 4px,
+  4px 4px,
+  4px 8px,
+  0px 8px
+)` }}
             >
+                <video
+                    className="absolute top-0 left-0 w-full h-full object-cover"
+                    src="/gifs/delete-computer-.webm"
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    loading="lazy" // This works in Chrome-based browsers
+                    poster="/gifs/delete-computer-poster.jpg"
+                />
+
             </div>
+
 
             <Dialog.Root>
                 <Dialog.Trigger asChild>
 
-                    <Image
-                        src={'/gifs/coin-.gif'}
+                    <video
+                        src="/gifs/coin-.webm"
                         width={80}
                         height={200}
-                        alt='coin gif'
                         className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-3/4 h-auto"
-                        unoptimized
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
                         onClick={() => coin_pickup.play()}
+                        poster="/gifs/coin--poster.jpg"
                     />
+
 
                 </Dialog.Trigger>
 
@@ -127,7 +141,7 @@ export default function Donate() {
 
 
             <h2 className="absolute top-3/4 left-1/2 transform -translate-x-1/2 -translate-y-1/2 !text-[4vw] text-nowrap text-gray-100 font-bold">Help Me Keeping my WiFi Alive</h2>
-            <h4 className="absolute top-3/4 left-1/2 transform -translate-x-1/2 translate-y-[15px] !text-xl text-nowrap text-gray-300">-- Pick Up the Coin --</h4>
+            <span className="absolute top-3/4 left-1/2 transform -translate-x-1/2 translate-y-[15px] !text-xl text-nowrap text-gray-300">-- Pick Up the Coin --</span>
 
         </div>
     )

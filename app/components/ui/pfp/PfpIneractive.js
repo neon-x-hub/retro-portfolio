@@ -40,7 +40,9 @@ export default function PfpInteractive() {
                 >
                     <Pfp
                         pfpSize={pfpSize}
-                        pfpUrl="/gifs/sleeping-car.gif"
+                        pfpUrl="/gifs/sleeping-car.webm"
+                        pfpPosterUrl="/gifs/sleeping-car-poster.jpg"
+
                     />
                 </div>
             </Popover.Trigger>

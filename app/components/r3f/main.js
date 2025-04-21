@@ -2,7 +2,7 @@
 
 import { useState, useMemo, useEffect, Suspense } from 'react';
 import { Canvas } from '@react-three/fiber';
-import { Image as ImageDrei, Float, Preload, useTexture } from '@react-three/drei';
+import { Image as ImageDrei, Float } from '@react-three/drei';
 import { EffectComposer, Glitch } from '@react-three/postprocessing';
 import { GlitchMode } from 'postprocessing';
 import CoverBg from '../backgrounds/CoverBg';
