@@ -44,7 +44,7 @@ html {
 
 body {
     font-size: 1.6rem;
-    font-family: 'Minecraft', sans-serif;
+    font-family: 'Minecraft', sans-serif !important;
     background: #f0f0f0;
     image-rendering: pixelated;
 }
