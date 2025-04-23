@@ -2,6 +2,7 @@
 
 import { useEffect, useState, useMemo } from "react";
 import { Howl } from "howler";
+import { ToastProvider } from "../core/ToastProvider";
 
 const MOBILE_BREAKPOINT = 462;
 const SHITTY_UI_URL = "https://www.spacejam.com/1996/";
@@ -29,10 +30,10 @@ export default function MobileOnly({ children }) {
         window.open(COMPLAIN_URL, "_blank");
     }
 
-    function handleGameBoyClick() {
+    function handleGameBoyClick(showToast) {
         // play click sound, then:
         sound.play();
-        alert("We're out of stock. Try eBay or a time machine.");
+        showToast("We're out of stock. Try eBay or a time machine.");
     }
 
     useEffect(() => {
@@ -61,9 +62,13 @@ export default function MobileOnly({ children }) {
                             Complain about it
                         </button>
 
-                        <button className="nes-btn" onClick={handleGameBoyClick}>
-                            Buy a GameBoy
-                        </button>
+                        <ToastProvider>
+                            {(showToast) => (
+                                <button className="nes-btn" onClick={() => handleGameBoyClick(showToast)}>
+                                    Buy a GameBoy
+                                </button>
+                            )}
+                        </ToastProvider>
                     </div>
                 </div>
 

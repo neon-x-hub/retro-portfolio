@@ -10,11 +10,13 @@
         "postbuild": "next-sitemap"
     },
     "dependencies": {
+        "@next/third-parties": "^15.3.1",
         "@react-three/drei": "^10.0.6",
         "@react-three/fiber": "^9.1.2",
         "@react-three/postprocessing": "^3.0.4",
         "@vercel/analytics": "^1.5.0",
         "@xyflow/react": "^12.5.4",
+        "copy-to-clipboard": "^3.3.3",
         "howler": "^2.2.4",
         "nes.css": "^2.3.0",
         "next": "15.2.4",

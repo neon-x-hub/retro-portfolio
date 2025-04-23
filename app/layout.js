@@ -2,7 +2,10 @@ import "nes.css/css/nes.min.css";
 import "./globals.css";
 import OldTvEffect from "./components/effects/OldTVEffect";
 import MobileOnly from "./components/layout/MobileOnly";
+
 import { Analytics } from "@vercel/analytics/react";
+import { GoogleAnalytics } from '@next/third-parties/google'
+
 
 export const metadata = {
     // === CORE METADATA === //
@@ -82,6 +85,9 @@ export default function RootLayout({ children }) {
             <body className="relative">
                 {/* Vercel Analytics */}
                 <Analytics />
+                {/* Google Analytics */}
+                <GoogleAnalytics gaId="G-93HGS5ZEHX"/>
+
                 <OldTvEffect />
                 <MobileOnly>
                     <div className="grayscale">

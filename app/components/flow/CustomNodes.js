@@ -1,7 +1,7 @@
 "use client"
 
 // components/CustomNode.jsx
-import React from 'react';
+import React, { useMemo } from 'react';
 import Image from 'next/image';
 import { Handle, Position, useReactFlow } from '@xyflow/react';
 import '../ui/pfp/Pfp.css';
@@ -13,10 +13,9 @@ const CustomNode = ({ id, data, selected }) => {
     const { getNode } = useReactFlow();
     const node = getNode(id);
 
-    const click_001 = new Howl({
-        src: ["/sounds/click_001.ogg"],
-        preload: true
-    });
+    // Memoised sounde
+    const click_001 = useMemo(() => new Howl({ src: ["/sounds/click_001.ogg"] }), []);
+
     // Handle positions relative to triangle center
     const handlePositions = {
         topLeft: { x: 0, y: 0 },

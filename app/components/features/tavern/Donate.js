@@ -1,16 +1,17 @@
 "use client"
 
-import Image from "next/image"
+import { useMemo } from "react"
 import { Howl } from "howler"
 import { Dialog, VisuallyHidden } from "radix-ui"
-
+import DonateOption from "./DonateOption"
 
 
 export default function Donate() {
 
-    const coin_pickup = new Howl({
+    const coin_pickup = useMemo(() => new Howl({
         src: ['/sounds/coin.ogg']
-    })
+    }), []);
+
 
     const DONATION_OPTIONS = [
         {
@@ -134,6 +135,11 @@ export default function Donate() {
                                 <DonateOption key={index} {...method} />
                             ))}
                         </div>
+
+                        <span className="text-base text-gray-500 mt-4">
+                            -- Click = Copy to Clipboard --
+                        </span>
+
                     </Dialog.Content>
                 </Dialog.Portal>
 
@@ -143,55 +149,6 @@ export default function Donate() {
             <h2 className="absolute top-3/4 left-1/2 transform -translate-x-1/2 -translate-y-1/2 !text-[4vw] text-nowrap text-gray-100 font-bold">Help Me Keeping my WiFi Alive</h2>
             <span className="absolute top-3/4 left-1/2 transform -translate-x-1/2 translate-y-[15px] !text-xl text-nowrap text-gray-300">-- Pick Up the Coin --</span>
 
-        </div>
-    )
-}
-
-
-function DonateOption({ title, icon, detail, link }) {
-    return (
-        <div className="flex flex-col items-center justify-between bg-gray-200 p-3 min-h-34 w-[95%]"
-            style={{
-                clipPath: `polygon(
-    0px calc(100% - 8px),
-    4px calc(100% - 8px),
-    4px calc(100% - 4px),
-    8px calc(100% - 4px),
-    8px 100%,
-    calc(100% - 8px) 100%,
-    calc(100% - 8px) calc(100% - 4px),
-    calc(100% - 4px) calc(100% - 4px),
-    calc(100% - 4px) calc(100% - 8px),
-    100% calc(100% - 8px),
-    100% 8px,
-    calc(100% - 4px) 8px,
-    calc(100% - 4px) 4px,
-    calc(100% - 8px) 4px,
-    calc(100% - 8px) 0px,
-    8px 0px,
-    8px 4px,
-    4px 4px,
-    4px 8px,
-    0px 8px
-  )`
-            }}
-        >
-            <div className="flex items-center space-x-3 p-3">
-                <Image src={icon} alt={`${title} icon`} className="w-10 h-auto" width={50} height={50} />
-                <span className="text-black font-bold text-3xl">{title}</span>
-            </div>
-            {link ? (
-                <a
-                    href={link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-[16px] font-medium mt-2 hover:underline text-center"
-                >
-                    {detail}
-                </a>
-            ) : (
-                <span className="text-gray-500 text-[16px] text-center mt-2">{detail}</span>
-            )}
         </div>
     )
 }

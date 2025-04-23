@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import ChapterMenu from "./ChapterMenu"
 import MainMenuControls from "../main_menu/MainMenuControls";
 import ChapterDetails from "./ChapterDetails";
@@ -14,16 +14,9 @@ export default function ControlledChapterMenu() {
     const [selectedIndex, setSelectedIndex] = useState(null);
 
     // Sound effects
-    const pluck_001 = new Howl({
-        src: ["/sounds/pluck_001.ogg"],
-    });
-    const pluck_002 = new Howl({
-        src: ["/sounds/pluck_002.ogg"],
-    });
-    const pickup_10 = new Howl({
-        src: ["/sounds/pickup_10.wav"],
-    });
-
+    const pluck_001 = useMemo(() => new Howl({ src: ["/sounds/pluck_001.ogg"] }), []);
+    const pluck_002 = useMemo(() => new Howl({ src: ["/sounds/pluck_002.ogg"] }), []);
+    const pickup_10 = useMemo(() => new Howl({ src: ["/sounds/pickup_10.wav"] }), []);
     const moveUp = () => {
         // move the cursor up, and wrap around if necessary
         setCursorIndex(prev => (prev > 0 ? prev - 1 : CHAPTERS.length - 1));

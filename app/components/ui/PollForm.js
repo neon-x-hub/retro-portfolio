@@ -2,17 +2,31 @@
 
 import "./pfp/Pfp.css";
 import "../pxlcrnrs.css";
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useMemo } from 'react';
 import { Howl } from "howler";
 
 const PollForm = ({ questions, onSubmit }) => {
     const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
     const [selectedAnswers, setSelectedAnswers] = useState([]);
-    const [shake, setShake] = useState(false)
+    const [shake, setShake] = useState(false);
+
+    // SFX
+    const error_002 = useMemo(() => new Howl({ src: ["/sounds/error_002.ogg"] }), []);
+    const confirmation_003 = useMemo(() => new Howl({ src: ["/sounds/confirmation_003.ogg"] }), []);
 
     const currentQuestion = questions[currentQuestionIndex];
 
+    const questionSounds = useMemo(() => [
+        new Howl({ src: ['/sounds/question_001.ogg'] }),
+        new Howl({ src: ['/sounds/question_002.ogg'] }),
+        new Howl({ src: ['/sounds/question_003.ogg'] }),
+        new Howl({ src: ['/sounds/question_004.ogg'] }),
+    ], []);
+
+
+
     const handleAnswer = (choice) => {
+
         // Check if this is NOT the best choice (assuming bestChoice is defined in your question data)
 
         const bestChoice = currentQuestion.choices.reduce((max, choice) =>
@@ -22,10 +36,6 @@ const PollForm = ({ questions, onSubmit }) => {
         if (choice.label !== bestChoice.label) {
 
             // Play a sound for wrong answer
-            const error_002 = new Howl({
-                src: ['/sounds/error_002.ogg'],
-            });
-
             error_002.play();
 
             if (navigator.vibrate) {
@@ -35,10 +45,6 @@ const PollForm = ({ questions, onSubmit }) => {
         else {
 
             // Play a sound for correct answer
-            const confirmation_003 = new Howl({
-                src: ['/sounds/confirmation_003.ogg'],
-            });
-
             confirmation_003.play();
 
             if (navigator.vibrate) {
@@ -68,14 +74,15 @@ const PollForm = ({ questions, onSubmit }) => {
         const shuffled = [...currentQuestion.choices].sort(() => Math.random() - 0.5);
         setShuffledChoices(shuffled);
 
+
+        const playRandomQuestionSound = () => {
+            const index = Math.floor(Math.random() * questionSounds.length);
+            questionSounds[index].play();
+        };
+
         // Play a random sound for the question.
         // Sounds are question_001.ogg, question_002.ogg, question_003.ogg and question_004.ogg
-        // Use the number of the question to determine the sound to play
-        const soundNumber = Math.floor(Math.random() * 4) + 1; // Random number between 1 and 4
-        const questionSound = new Howl({
-            src: [`/sounds/question_00${soundNumber}.ogg`],
-        });
-        questionSound.play();
+        playRandomQuestionSound();
 
     }, [currentQuestion]);
 

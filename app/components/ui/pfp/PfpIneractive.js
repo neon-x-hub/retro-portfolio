@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 import Pfp from "./Pfp";
 import './Pfp.css';
 import * as Popover from '@radix-ui/react-popover';
@@ -16,9 +16,9 @@ export default function PfpInteractive() {
         "Zzz... cool cat vibes."
     ];
 
-    const tick_002 = new Howl({
-        src: ["/sounds/tick_002.ogg"],
-    });
+    // Memoised moew sound
+    const tick_002 = useMemo(() => new Howl({ src: ["/sounds/tick_002.ogg"] }), []);
+
 
     const [isOpen, setIsOpen] = useState(false);
 

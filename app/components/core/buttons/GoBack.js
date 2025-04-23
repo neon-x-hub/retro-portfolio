@@ -1,13 +1,15 @@
 "use client";
 
+import { useMemo } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Howl } from "howler";
 
 export default function GoBack() {
-    const back_003 = new Howl({
-        src: ["/sounds/back_003.ogg"],
-    });
+
+    const back_003 = useMemo(() => new Howl({
+        src: ['/sounds/back_003.ogg']
+    }), []);
 
     return (
         <>

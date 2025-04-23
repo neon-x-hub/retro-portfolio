@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import { useRouter } from 'next/navigation';
 import MainMenuItems from './MainMenuItems';
 import MainMenuControls from './MainMenuControls';
@@ -14,15 +14,9 @@ const MainMenu = () => {
     const router = useRouter();
 
     // Sound effects
-    const pluck_001 = new Howl({
-        src: ["/sounds/pluck_001.ogg"],
-    });
-    const pluck_002 = new Howl({
-        src: ["/sounds/pluck_002.ogg"],
-    });
-    const pickup_10 = new Howl({
-        src: ["/sounds/pickup_10.wav"],
-    });
+    const pluck_001 = useMemo(() => new Howl({ src: ["/sounds/pluck_001.ogg"] }), []);
+    const pluck_002 = useMemo(() => new Howl({ src: ["/sounds/pluck_002.ogg"] }), []);
+    const pickup_10 = useMemo(() => new Howl({ src: ["/sounds/pickup_10.wav"] }), []);
     const moveUp = () => {
         setSelectedIndex(prev => (prev > 0 ? prev - 1 : menuItems.length - 1));
         if (Math.random() > 0.5) {
